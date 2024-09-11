@@ -64,6 +64,7 @@
 #interface table #painel #txt_display{
     display:block;
     width: 100%;
+    font-size: 19px;
     background-color: transparent;
     border: 0;
     outline: none;
@@ -76,23 +77,17 @@
     width: 50px;
     height: 50px;
     font-size: 1.5rem;
-    font-weight: bold;
-    border: 1px solid #000;
-    background-color: #e0e0e0;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    
+    
 
 }
 #interface table button#bt-acce{
     font-size: .8rem;
-    font-weight: bold;
-    background-color: #0a07d4;
-    color: #ffffff;
+    color: #000000;
 }
 
 #interface table #bt-plus, 
 #interface table #bt-equal {
     height: 102px;
-    background-color: #0a07d4;
     color: #fafafa;
 }
