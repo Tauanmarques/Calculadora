@@ -1,34 +1,31 @@
 $(document).ready(function() {
+
+    //$('#txt_display').mask('000\'000\'000\'000\'000', {reverse: true});
     
     var bt_nr = '';
 
-    $ ('.bt-nr').click(function() {
-        var n = $(this).text();
+$('.bt-nr').click(function() {
+    
+    var n = $(this).text();
 
-        if(bt_nr[0] !== '0') {
+     if( n =="0" ) {
 
+         if( bt_nr.lenght > 0) {
             bt_nr = bt_nr.concat(n);
+        
+        
+         }
 
-        } else if (bt_nr[0] !== '0' && bt_nr[1] !== '.') {
+     } else {
 
-            bt_nr = bt_nr.concat(n);
+        bt_nt = bt_nr.concat(n);
+     }
 
-        } else {
+    bt_nr = bt_nr.concat(n);
+    
+      $('text_display').val(bt_nr)
 
-            if(bt_nr.length == 1 && n == '.'){
 
-                bt_nr = bt_nr.concat(n);
-                $(this).attr('disabled', 'true');
-
-            } else {
-
-                bt_nr = bt_nr.concat(n);
-
-            }
-
-        }  
-       
-        $('#txt_display').val(bt_nr);
     });
 
 });
